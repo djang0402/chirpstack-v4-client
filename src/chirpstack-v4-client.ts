@@ -1,19 +1,19 @@
-import { DeviceServiceClient } from '@djang0402/chirpstack-api-grpc-web/api/device_grpc_web_pb';
+import { DeviceServiceClient } from '@chirpstack/chirpstack-api-grpc-web/api/device_grpc_web_pb';
 import {
   ListDevicesRequest,
-} from '@djang0402/chirpstack-api-grpc-web/api/device_pb';
-import { TenantServiceClient } from '@djang0402/chirpstack-api-grpc-web/api/tenant_grpc_web_pb';
-import { ListTenantsRequest } from '@djang0402/chirpstack-api-grpc-web/api/tenant_pb';
-import { ApplicationServiceClient } from '@djang0402/chirpstack-api-grpc-web/api/application_grpc_web_pb'
+} from '@chirpstack/chirpstack-api-grpc-web/api/device_pb';
+import { TenantServiceClient } from '@chirpstack/chirpstack-api-grpc-web/api/tenant_grpc_web_pb';
+import { ListTenantsRequest } from '@chirpstack/chirpstack-api-grpc-web/api/tenant_pb';
+import { ApplicationServiceClient } from '@chirpstack/chirpstack-api-grpc-web/api/application_grpc_web_pb'
 import {
   ListApplicationsRequest,
-} from '@djang0402/chirpstack-api-grpc-web/api/application_pb'
+} from '@chirpstack/chirpstack-api-grpc-web/api/application_pb'
 
 import {
   FlushDeviceQueueRequest, 
   EnqueueDeviceQueueItemRequest,
   DeviceQueueItem,
-} from '@djang0402/chirpstack-api-grpc-web/api/device_pb';
+} from '@chirpstack/chirpstack-api-grpc-web/api/device_pb';
 export interface Downlink {
     devEUI: string;
     confirmed: boolean;
